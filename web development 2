@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGadget Store - Premium Wireless Earbuds</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #ff6b6b;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 5%;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .product-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .product-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .product-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .product-description {
+            margin-bottom: 1.5rem;
+        }
+
+        .add-to-cart {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
+        .reviews, .related-products {
+            max-width: 1200px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .review {
+            border-bottom: 1px solid #eee;
+            padding: 1rem 0;
+        }
+
+        .related-products {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+        }
+
+        .related-product {
+            flex: 0 0 200px;
+            text-align: center;
+        }
+
+        .related-product img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .related-product img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">TechGadget Store</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">Cart</a>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://wonderfulengineering.com/wp-content/uploads/2020/11/10-best-Wireless-Earbuds-8.jpg" alt="Wireless Earbuds">
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">Premium Wireless Earbuds</h1>
+            <div class="product-price">$129.99</div>
+            <p class="product-description">
+                Experience crystal-clear sound and ultimate comfort with our Premium Wireless Earbuds. 
+                Featuring noise cancellation, 20-hour battery life, and ergonomic design for all-day wear.
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <strong>Sarah M.</strong> - ★★★★★
+            <p>Amazing sound quality and battery life! Highly recommend.</p>
+        </div>
+        <div class="review">
+            <strong>John D.</strong> - ★★★★☆
+            <p>Great earbuds, comfortable fit and good noise cancellation.</p>
+        </div>
+    </div>
+
+    <div class="related-products">
+        <div class="related-product">
+            <img src="https://i5.walmartimages.com/asr/4951cfe5-b949-435c-a4aa-8aa918d0752b.5b459bbce6b3752b5875a697023e03c8.jpeg" alt="Smart Watch">
+            <p>Smart Watch</p>
+            <p>$99.99</p>
+        </div>
+        <div class="related-product">
+            <img src="https://www.bhphotovideo.com/images/images2500x2500/audioengine_a5_bt_blk_a5_plus_bluetooth_speaker_1392605.jpg" alt="Bluetooth Speaker">
+            <p>Bluetooth Speaker</p>
+            <p>$79.99</p>
+        </div>
+        <div class="related-product">
+            <img src="https://th.bing.com/th/id/OIP.o_zxCgNvAUgnPI5hHI4NSAHaHa?rs=1&pid=ImgDetMain" alt="Wireless Charger">
+            <p>Wireless Charger</p>
+            <p>$49.99</p>
+        </div>
+    </div>
+</body>
+</html>
